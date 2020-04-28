@@ -174,7 +174,7 @@ public class UserCompany extends BunqModel {
      */
     @Expose
     @SerializedName("director_alias")
-    private LabelUser directorAlias;
+    private List<LabelUser> directorAlias;
 
     /**
      * The person's preferred language. Formatted as a ISO 639-1 language code plus a ISO 3166-1
@@ -787,11 +787,11 @@ public class UserCompany extends BunqModel {
     /**
      * The existing bunq user alias for the company's director.
      */
-    public LabelUser getDirectorAlias() {
+    public List<LabelUser> getDirectorAlias() {
         return this.directorAlias;
     }
 
-    public void setDirectorAlias(LabelUser directorAlias) {
+    public void setDirectorAlias(List<LabelUser> directorAlias) {
         this.directorAlias = directorAlias;
     }
 
